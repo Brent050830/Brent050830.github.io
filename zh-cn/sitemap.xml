@@ -11,11 +11,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://Brent050830.github.io/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
                 href="https://Brent050830.github.io/"
                 />
@@ -25,16 +20,6 @@
   </url><url>
     <loc>https://Brent050830.github.io/post/</loc>
     <lastmod>2025-01-24T01:14:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://Brent050830.github.io/ar/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Brent050830.github.io/post/"
-                />
   </url><url>
     <loc>https://Brent050830.github.io/p/23/</loc>
     <lastmod>2025-01-24T01:00:02+08:00</lastmod>
@@ -51,11 +36,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://Brent050830.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://Brent050830.github.io/ar/categories/"
                 />
     <xhtml:link
                 rel="alternate"
@@ -102,11 +82,6 @@
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="ar"
-                href="https://Brent050830.github.io/ar/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="zh-cn"
                 href="https://Brent050830.github.io/tags/"
                 />
@@ -119,16 +94,6 @@
   </url><url>
     <loc>https://Brent050830.github.io/p/placeholder-text/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://Brent050830.github.io/ar/p/%D9%85%D8%AB%D8%A7%D9%84-%D9%86%D8%B5/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Brent050830.github.io/p/placeholder-text/"
-                />
   </url><url>
     <loc>https://Brent050830.github.io/tags/tag-with-whitespaces/</loc>
     <lastmod>2019-03-09T00:00:00+00:00</lastmod>
