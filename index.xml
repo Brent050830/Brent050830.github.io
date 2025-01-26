@@ -162,9 +162,14 @@ $$
     a &amp; b \\
     c&amp;d
     \end{Bmatrix}
-    $$&lt;/li&gt;
+    $$
+Inline math: $\varphi = \dfrac{1+\sqrt5}{2}= 1.6180339887…$&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;/ol&gt;
+$$
+ \varphi = 1+\frac{1} {1+\frac{1} {1+\frac{1} {1+\cdots} } } 
+$$&lt;ol start=&#34;9&#34;&gt;
 &lt;li&gt;
 &lt;h3 id=&#34;进阶的样式&#34;&gt;进阶的样式：
 &lt;/h3&gt;&lt;ul&gt;
