@@ -222,7 +222,14 @@ css语法：ctrl+shift+p 搜索&lt;/li&gt;
 	
 	
 &gt;
-![][def]
+&lt;img src=&#34;https://img0.baidu.com/it/u=2191392668,814349101&amp;amp;fm=253&amp;amp;app=138&amp;amp;size=w931&amp;amp;n=0&amp;amp;f=JPEG&amp;amp;fmt=auto?sec=1737997200&amp;amp;t=5ad1d9a741b3040967bf71f0fe15b958&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
 {{ $image := .Resources.Get &amp;ldquo;florian-klauer-nptLmg6jqDo-unsplash.jpg&amp;rdquo; }}
 &lt;img src=&#34;https://Brent050830.github.io/u=3650354000,1444066366&amp;amp;fm=253&amp;amp;app=120&amp;amp;size=w931&amp;amp;n=0&amp;amp;f=JPEG&amp;amp;fmt=auto-1.webp&#34;
 	
