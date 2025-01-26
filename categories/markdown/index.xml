@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on Brent_blog</title>
-        <link>https://Brent050830.github.io/post/</link>
-        <description>Recent content in Posts on Brent_blog</description>
+        <title>Markdown on Brent_blog</title>
+        <link>https://Brent050830.github.io/categories/markdown/</link>
+        <description>Recent content in Markdown on Brent_blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Brent</copyright>
-        <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Brent050830.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 26 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://Brent050830.github.io/categories/markdown/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Markdown使用</title>
         <link>https://Brent050830.github.io/p/markdown/</link>
         <pubDate>Sun, 26 Jan 2025 00:00:00 +0000</pubDate>
