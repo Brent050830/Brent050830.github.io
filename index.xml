@@ -220,6 +220,24 @@ css语法：ctrl+shift+p 搜索&lt;/li&gt;
 		alt=&#34;alt text&#34;
 	
 	
+&gt;
+&lt;img src=&#34;https://Brent050830.github.io/image.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;还不行吗&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://Brent050830.github.io/florian-klauer-nptLmg6jqDo-unsplash.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
 &gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
