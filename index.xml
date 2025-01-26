@@ -210,24 +210,14 @@ css语法：ctrl+shift+p 搜索&lt;/li&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;插入图片&lt;/strong&gt;
-&lt;img src=&#34;https://Brent050830.github.io/&#34;
+&lt;p&gt;&lt;strong&gt;插入图片&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://Brent050830.github.io/u=3650354000,1444066366&amp;amp;fm=253&amp;amp;app=120&amp;amp;size=w931&amp;amp;n=0&amp;amp;f=JPEG&amp;amp;fmt=auto-1.webp&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
-		alt=&#34;文件的描述&#34;
-	
-	
-&gt;
-&lt;img src=&#34;https://Brent050830.github.io/u=3650354000,1444066366&amp;amp;fm=253&amp;amp;app=120&amp;amp;size=w931&amp;amp;n=0&amp;amp;f=JPEG&amp;amp;fmt=auto.webp&#34;
-	
-	
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;Photo by Florian Klauer on Unsplash&#34;
+		alt=&#34;alt text&#34;
 	
 	
 &gt;&lt;/p&gt;
