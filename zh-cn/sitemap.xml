@@ -20,19 +20,14 @@
   </url><url>
     <loc>https://Brent050830.github.io/post/</loc>
     <lastmod>2025-01-26T21:39:47+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Brent050830.github.io/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Brent050830.github.io/post/"
-                />
+  </url><url>
+    <loc>https://Brent050830.github.io/page/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://Brent050830.github.io/archives/</loc>
+    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Brent050830.github.io/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -43,51 +38,6 @@
                 hreflang="zh-cn"
                 href="https://Brent050830.github.io/categories/"
                 />
-  </url><url>
-    <loc>https://Brent050830.github.io/p/test-chinese/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Brent050830.github.io/en/p/test-chinese/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Brent050830.github.io/p/test-chinese/"
-                />
-  </url><url>
-    <loc>https://Brent050830.github.io/categories/test/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Brent050830.github.io/en/categories/test/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Brent050830.github.io/categories/test/"
-                />
-  </url><url>
-    <loc>https://Brent050830.github.io/categories/%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://Brent050830.github.io/en/categories/%E6%B5%8B%E8%AF%95/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://Brent050830.github.io/categories/%E6%B5%8B%E8%AF%95/"
-                />
-  </url><url>
-    <loc>https://Brent050830.github.io/page/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://Brent050830.github.io/archives/</loc>
-    <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://Brent050830.github.io/tags/</loc>
     <xhtml:link
@@ -100,6 +50,8 @@
                 hreflang="zh-cn"
                 href="https://Brent050830.github.io/tags/"
                 />
+  </url><url>
+    <loc>https://Brent050830.github.io/categories/test/</loc>
   </url><url>
     <loc>https://Brent050830.github.io/%E5%85%B3%E4%BA%8E/</loc>
   </url><url>
