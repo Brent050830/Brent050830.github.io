@@ -20,7 +20,7 @@
         (function() {
             const colorSchemeKey = 'StackColorScheme';
             if(!localStorage.getItem(colorSchemeKey)){
-                localStorage.setItem(colorSchemeKey, "auto");
+                localStorage.setItem(colorSchemeKey, "dark");
             }
         })();
     </script><script>
@@ -546,6 +546,17 @@ const waifuTipsJsonPath = "https://Brent050830.github.io/waifu/waifu-tips.json"
     left: 0;
     width: 100%;
     z-index: -1;
+  }
+</style>
+<style>
+  @font-face {
+    font-family: '我';
+    src: url(https://Brent050830.github.io/font/ChillKai.ttf) format('truetype');
+  }
+
+  :root {
+    --base-font-family: '我';
+    --code-font-family: '我';
   }
 </style>
 
