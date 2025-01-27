@@ -531,11 +531,11 @@ const waifuTipsJsonPath = "https://Brent050830.github.io/waifu/waifu-tips.js"
       loadExternalResource(cssPath, "css"),
       loadExternalResource(config.path.live2dCorePath, "js"),
       loadExternalResource(config.path.live2dSdkPath, "js"),
-      loadExternalResource(config.path.live2dJsPath, "js")
+      loadExternalResource(config.path.tipsJsPath, "js")
     ]).then(() => {
       initWidget({
         waifuPath: waifuTipsJsonPath,
-        cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+        cdnPath: config.path.modelPath,
         tools: config.tools,
         dragEnable: config.drag.enable,
         dragDirection: config.drag.direction,
