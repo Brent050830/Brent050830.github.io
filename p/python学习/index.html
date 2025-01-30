@@ -332,14 +332,15 @@
             <li><a href="#字符串的格式化">字符串的格式化</a></li>
             <li><a href="#格式化的精度控制">格式化的精度控制</a></li>
             <li><a href="#快速格式化的方式">快速格式化的方式</a></li>
-            <li><a href="#表示的格式化">表示的格式化</a></li>
+            <li><a href="#表达式的格式化">表达式的格式化</a></li>
           </ol>
         </li>
+        <li><a href="#数据输入">数据输入</a></li>
       </ol>
     </li>
-    <li><a href="#进阶内容">进阶内容</a>
+    <li><a href="#语句学习">语句学习</a>
       <ol>
-        <li><a href="#我们">我们</a></li>
+        <li><a href="#判断语句">判断语句</a></li>
       </ol>
     </li>
   </ol>
@@ -398,7 +399,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 2 分钟
+                    阅读时长: 3 分钟
                 </time>
             </div>
         
@@ -895,9 +896,9 @@ s声明类型</p>
 <h4 id="格式化的精度控制">格式化的精度控制
 </h4><blockquote>
 <p>m.n来控制    m为宽度，n为小数精度 <br>
-%7.2f   %5d
+%7.2f   %5d   <br>
 小数部分和小数点也会计入宽度  <br>
-小数部分四舍五入
+小数部分四舍五入     <br>
 m比本身宽度小时，不生效</p>
 </blockquote>
 <div class="highlight"><div class="chroma">
@@ -935,10 +936,113 @@ m比本身宽度小时，不生效</p>
 </div>
 </div><p>f&quot;{变量}{变量}&ldquo;的方式  <br>
 ==适合对精度没有要求==</p>
-<h4 id="表示的格式化">表示的格式化
-</h4><h2 id="进阶内容">进阶内容
-</h2><h3 id="我们">我们
-</h3>
+<h4 id="表达式的格式化">表达式的格式化
+</h4><p>表达式：一条有明确执行结果的代码语句</p>
+<ul>
+<li>1+1、5*2</li>
+<li>变量的定义</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;1*1=</span><span class="si">%d</span><span class="s2">&#34;</span><span class="o">%</span><span class="p">(</span><span class="mi">1</span><span class="o">*</span><span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;1*2的结果是</span><span class="si">{</span><span class="mi">1</span><span class="o">*</span><span class="mi">2</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;字符串的类型名字是</span><span class="si">%s</span><span class="s2">&#34;</span><span class="o">%</span><span class="nb">type</span><span class="p">(</span><span class="s2">&#34;字符串&#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 相当于得有返回值</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>小作业：
+<img src="https://s2.loli.net/2025/01/31/WPJVLDxX2ohEs7y.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span><span class="o">=</span><span class="s2">&#34;博客&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">price</span><span class="o">=</span><span class="mf">19.99</span>
+</span></span><span class="line"><span class="cl"><span class="n">code</span><span class="o">=</span><span class="s2">&#34;003032&#34;</span><span class="c1"># 需要使用字符串定义！！！</span>
+</span></span><span class="line"><span class="cl"><span class="n">factor</span><span class="o">=</span><span class="mf">1.2</span>
+</span></span><span class="line"><span class="cl"><span class="n">day</span><span class="o">=</span><span class="mi">7</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;公司：</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">，股票代码</span><span class="si">{</span><span class="n">code</span><span class="si">}</span><span class="s2">，当前股价</span><span class="si">{</span><span class="mf">19.99</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;每日增长系数:</span><span class="si">%.1f</span><span class="s2">，经过</span><span class="si">%d</span><span class="s2">天的增长，股价达到了</span><span class="si">%.2f</span><span class="s2">&#34;</span><span class="o">%</span><span class="p">(</span><span class="n">factor</span><span class="p">,</span><span class="n">day</span><span class="p">,</span><span class="n">price</span><span class="o">*</span><span class="n">factor</span><span class="o">**</span><span class="n">day</span><span class="p">))</span><span class="c1"># 可以直接表达式计算诶</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="数据输入">数据输入
+</h3><p>input语句</p>
+<blockquote>
+<p>终于开始输入了
+获取键盘的输入</p>
+</blockquote>
+<ul>
+<li>print——输出</li>
+<li>inpuu——输入</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;请告诉我你是谁&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">name</span><span class="o">=</span><span class="nb">input</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;你是</span><span class="si">%s</span><span class="s2">&#34;</span><span class="o">%</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">name</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请告诉我你是谁&#34;</span><span class="p">)</span><span class="c1"># input中的内容相当于print</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;你是</span><span class="si">%s</span><span class="s2">&#34;</span><span class="o">%</span><span class="n">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># input输入的数据类型是字符串类型！！！</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 都当做字符串看待（无论输入什么）</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 需要数据类型转换</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>小作业</strong>
+<img src="https://s2.loli.net/2025/01/31/1FaH3lVtJ5XW2Rf.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;你好：</span><span class="si">{</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;名称&#34;</span><span class="p">)</span><span class="si">}</span><span class="s2">，您是尊贵的：</span><span class="si">{</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;类型&#34;</span><span class="p">)</span><span class="si">}</span><span class="s2">用户，欢迎您的光临&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="语句学习">语句学习
+</h2><h3 id="判断语句">判断语句
+</h3><blockquote>
+<p>布尔类型
+比较运算</p>
+</blockquote>
+
 </section>
 
 
