@@ -324,6 +324,17 @@
         <li><a href="#数据类型">数据类型</a></li>
         <li><a href="#数据类型转换">数据类型转换</a></li>
         <li><a href="#标识符">标识符</a></li>
+        <li><a href="#运算符">运算符</a></li>
+        <li><a href="#字符串拓展">字符串拓展</a>
+          <ol>
+            <li><a href="#字符串的定义">字符串的定义</a></li>
+            <li><a href="#字符串的拼接">字符串的拼接</a></li>
+            <li><a href="#字符串的格式化">字符串的格式化</a></li>
+            <li><a href="#格式化的精度控制">格式化的精度控制</a></li>
+            <li><a href="#快速格式化的方式">快速格式化的方式</a></li>
+            <li><a href="#表示的格式化">表示的格式化</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
     <li><a href="#进阶内容">进阶内容</a>
@@ -670,33 +681,26 @@ type有返回值（目前的第一个有返回值的）</p>
 </div>
 </div><h3 id="标识符">标识符
 </h3><blockquote>
-<p>标识符和变量的关系
+<p>标识符和变量的关系 <br>
 标识符包括<strong>变量、类、方法</strong>。</p>
 </blockquote>
 </li>
 </ul>
 <p><strong>三个规则</strong></p>
+<blockquote>
 <ol>
-<li>内容限定
-<ol>
-<li>英文</li>
-<li>中文(不推荐使用)</li>
-<li>数字(不能用在开头)</li>
-<li>下划线_</li>
+<li>内容限定  <br>
+1. 英文 <br>
+2. 中文(不推荐使用)  <br>
+3. 数字(不能用在开头)  <br>
+4. 下划线_</li>
+<li>大小写敏感 <br>
+1. a!=A</li>
+<li>不可使用关键字 <br>
+1. 不需要背  <br>
+2. 大小写敏感也适用于关键字</li>
 </ol>
-</li>
-<li>大小写敏感
-<ol>
-<li>a!=A</li>
-</ol>
-</li>
-<li>不可使用关键字
-<ol>
-<li>不需要背</li>
-<li>大小写敏感也适用于关键字</li>
-</ol>
-</li>
-</ol>
+</blockquote>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -716,7 +720,7 @@ type有返回值（目前的第一个有返回值的）</p>
 </span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">A</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># 使用关键字是错误的！！！</span>
 </span></span><span class="line"><span class="cl"><span class="c1"># class=1(×)</span>
-</span></span><span class="line"><span class="cl"><span class="n">Class</span><span class="o">=</span><span class="mi">1</span><span class="p">(</span><span class="err">√</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">Class</span><span class="o">=</span><span class="mi">1</span><span class="c1"># (√)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><strong>规范</strong></p>
@@ -726,7 +730,213 @@ type有返回值（目前的第一个有返回值的）</p>
 <li>下划线命名法</li>
 <li>英文字母小写或驼峰命名法</li>
 </ul>
-<h2 id="进阶内容">进阶内容
+<h3 id="运算符">运算符
+</h3><ul>
+<li>算术运算符
+<img src="https://s2.loli.net/2025/01/29/OTkxb2AfcRMC7Yu.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+使用</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;1+1=&#34;</span><span class="p">,</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;1-1=&#34;</span><span class="p">,</span><span class="mi">1</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;1*1=&#34;</span><span class="p">,</span><span class="mi">1</span><span class="o">*</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;1/1=&#34;</span><span class="p">,</span><span class="mi">1</span><span class="o">/</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># /的返回值为浮点数类型？</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;11//2=&#34;</span><span class="p">,</span><span class="mi">11</span><span class="o">//</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;11%2=&#34;</span><span class="p">,</span><span class="mi">11</span><span class="o">%</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;2**2=&#34;</span><span class="p">,</span><span class="mi">2</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>赋值运算符</li>
+</ul>
+<p><img src="https://s2.loli.net/2025/01/29/TnXGHAzCiKb2MJI.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">num</span><span class="o">=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="n">num</span><span class="o">+=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># num=num+1</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">num</span><span class="o">-=</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="字符串拓展">字符串拓展
+</h3><h4 id="字符串的定义">字符串的定义
+</h4><ol>
+<li><strong>单引号定义</strong></li>
+<li>双引号</li>
+<li>三引号&rdquo;&ldquo;&ldquo;ssss&rdquo;&rdquo;&quot;(用变量接受为字符串，反之为注释)  <br>
+==最常用为双引号==</li>
+</ol>
+<p><strong>字符串包括&rsquo;  &ldquo;</strong></p>
+<ul>
+<li>单引号定义</li>
+<li>双引号定义</li>
+<li>转义字符</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name1</span><span class="o">=</span><span class="s1">&#39;&#34;我是&#34;&#39;</span><span class="c1"># &#34;我是&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">name2</span><span class="o">=</span><span class="s2">&#34;&#39;我是&#39;&#34;</span><span class="c1"># &#39;我是&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">name3</span><span class="o">=</span><span class="s2">&#34;</span><span class="se">\&#34;</span><span class="s2">我是</span><span class="se">\&#34;</span><span class="s2">&#34;</span><span class="c1"># &#34;我是&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="字符串的拼接">字符串的拼接
+</h4><ul>
+<li>
+<p>+号</p>
+<blockquote>
+<p>字面量与变量拼接</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;我是&#34;</span><span class="o">+</span><span class="s2">&#34;cb&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;woshi&#34;</span><span class="p">,</span><span class="s2">&#34;cb&#34;</span><span class="p">)</span><span class="c1"># 逗号分割中间会有空格</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span><span class="o">=</span><span class="mi">19</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;wojinnian&#34;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span><span class="o">+</span><span class="s2">&#34;suile&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 实现类型转换的拼接</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 因为只能实现字符串的拼接</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h4 id="字符串的格式化">字符串的格式化
+</h4><ul>
+<li>变量太多事，拼接太麻烦了</li>
+<li>无法与其他类型拼接
+<img src="https://s2.loli.net/2025/01/30/DtioSVHmRT4KBpl.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+<strong>占位的方式</strong>
+与c语言类似的地方</li>
+</ul>
+<blockquote>
+<p>%s相当于+str()的形式  <br>
+%用来占位            <br>
+s声明类型</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="n">m</span><span class="o">=</span><span class="s2">&#34;我叫&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">%s</span><span class="s2">cb&#34;</span><span class="o">%</span><span class="n">m</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span><span class="o">=</span><span class="mi">19</span>
+</span></span><span class="line"><span class="cl"><span class="n">b</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">%s</span><span class="s2">,年龄是</span><span class="si">%s</span><span class="s2">&#34;</span><span class="o">%</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">age</span><span class="p">)</span><span class="c1"># 多变量占位</span>
+</span></span><span class="line"><span class="cl"><span class="n">c</span><span class="o">=</span><span class="s2">&#34;</span><span class="si">%s</span><span class="s2">,年龄是</span><span class="si">%d</span><span class="s2">&#34;</span><span class="o">%</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">age</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol>
+<li>%s 字符串</li>
+<li>%d 整数</li>
+<li>%f  浮点数</li>
+</ol>
+<blockquote>
+<p>这里的sdf实际上实现了类型转换      <br>
+必须符合之前的要求</p>
+</blockquote>
+<h4 id="格式化的精度控制">格式化的精度控制
+</h4><blockquote>
+<p>m.n来控制    m为宽度，n为小数精度 <br>
+%7.2f   %5d
+小数部分和小数点也会计入宽度  <br>
+小数部分四舍五入
+m比本身宽度小时，不生效</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">num</span><span class="o">=</span><span class="mf">11.1234567</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;精度控制</span><span class="si">%7.2f</span><span class="s2">&#34;</span><span class="o">%</span><span class="n">num</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;精度控制</span><span class="si">%7.6f</span><span class="s2">&#34;</span><span class="o">%</span><span class="n">num</span><span class="p">)</span><span class="c1"># 可见是优先看小数位数</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;精度控制</span><span class="si">%7.4f</span><span class="s2">&#34;</span><span class="o">%</span><span class="n">num</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s2">&#34;精度控制</span><span class="si">%3f</span><span class="s2">&#34;</span><span class="o">%</span><span class="n">num</span><span class="p">)</span><span class="c1"># 不生效</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="快速格式化的方式">快速格式化的方式
+</h4><p><strong>f&rdquo;{}&quot;</strong>
+不限数据类型，不做精度控制，原样输出</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">name</span><span class="o">=</span><span class="s2">&#34;cb&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">age</span><span class="o">=</span><span class="mi">19</span>
+</span></span><span class="line"><span class="cl"><span class="n">year</span><span class="o">=</span><span class="mi">2005</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;我的名字是</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2">，年龄是</span><span class="si">{</span><span class="n">age</span><span class="si">}</span><span class="s2">，出生于</span><span class="si">{</span><span class="n">year</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>f&quot;{变量}{变量}&ldquo;的方式  <br>
+==适合对精度没有要求==</p>
+<h4 id="表示的格式化">表示的格式化
+</h4><h2 id="进阶内容">进阶内容
 </h2><h3 id="我们">我们
 </h3>
 </section>
